@@ -14,7 +14,14 @@ function buscarAmigo(amigos, nombre) {
   //  buscarAmigo(amigos, 'toni') debe devolver { nombre: 'toni', edad: 33 };
 
   // Tu código aca:
-  
+var encontrarAmigos={};
+
+  for (var i = 0; i < amigos.length; i++) {
+    if(amigos[i].nombre === nombre) {
+      encontrarAmigos = amigos[i]; 
+    }
+}
+return encontrarAmigos;
 }
 
 // No modifiques nada debajo de esta linea //
